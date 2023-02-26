@@ -1,0 +1,197 @@
+body {
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    color: #ffffff;
+    height: 100%;
+    font-weight: 500;
+    font-size: 14px;
+    background-color:#333;
+    
+    
+}
+
+a {
+  text-decoration: none;
+  color:  #252B42;
+  
+} 
+ul,
+ol, 
+li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+h1 , h2 ,h3 ,h4 ,h5 ,h6 , p {
+   margin: 0;
+}
+
+.wrapper {
+   min-height: 100vh;
+   overflow: hidden;
+   display: flex;
+   flex-direction: column;
+}
+
+._container {
+  padding: 0px 15px;
+  
+
+}
+
+.page {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+
+}
+
+.page__container  {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.stopwatch {
+  background-color: rgb(0, 0, 0, 0.6);
+  border-radius: 10px;
+  padding: 20px  15px;
+  max-width: 290px;
+ 
+
+}
+
+.stopwatch>*:not(:last-child) {
+    margin-bottom: 40px;
+}
+.stopwatch:not(:last-child) {
+  margin-bottom: 50px;
+}
+.watch {
+  font-size: 65px;
+  max-width: 260px;
+}
+
+
+
+.buttons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+
+
+.button {
+  font-size: 16px;
+  min-width: 75px;
+  min-height: 75px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  text-transform: uppercase;
+  cursor: pointer;
+  
+}
+
+
+
+.start-button {
+  color: green;
+  background-color: rgb(0, 128, 0, 0.1);
+  border: 2px solid green;
+}
+
+.reset-button {
+  border: 2px solid #fff;
+  background-color: rgb(255, 255, 255, .1);
+}
+
+.stop-button {
+  border: 2px solid red;
+  background-color: rgb(255, 0, 0, 0.1);
+  color: red;
+}
+
+ .form {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(0, 0, 0, 0.6);
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  padding: 10px 15px;
+  max-width: 290px;
+ }
+
+ .form>*:not(:last-child) {
+  margin-bottom: 25px;
+ }
+
+ .form__input {
+  display: none;
+ }
+
+ .form__input._active::placeholder {
+    font-size: 18px; 
+    color:  red;
+ }
+
+ .form__input::placeholder {
+    display: none;
+}
+
+ .form__input._active  {
+  display: block;
+  background-color:rgb(255, 255, 255, .1);
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  color: #fff;
+  font-size: 50px;
+  max-width: 260px;
+  text-align: center;
+ }
+ .result-screen {
+    display: none;
+ }
+ .result-screen._active {
+  display: block;
+  background-color:rgb(255, 255, 255, .1);
+  border: none;
+  border-radius: 8px;
+  font-size: 20px;
+  outline: none;
+  color: #fff;
+  font-size: 50px;
+  min-width: 260px;
+  text-align: center;
+ }
+
+ .submit-reset__btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  text-transform: uppercase;
+  background-color: #23b123; 
+  color: #fff;
+  border: none;
+  padding: 10px;
+  min-width: 150px;
+  border-radius: 8px;
+  cursor:pointer;
+  transition: background 0.5s ease 0s;
+
+ }
+
+ .submit-reset__btn._reset {
+  background-color: red; 
+ }
